@@ -1,0 +1,82 @@
+/* Estilo da Sidebar */
+.sidebar {
+    width: 250px;
+    height: 97vh;
+    background: linear-gradient(180deg, #2e2e48, #1e1e2f);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px 0 0 10px;
+}
+
+.sidebar .logo img {
+    width: 150px;
+    margin-bottom: 40px;
+    border-radius: 50%;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar ul li {
+    width: 100%;
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    padding-left: 30px;
+    border-radius: 0 25px 25px 0;
+}
+
+.sidebar ul li a i {
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #4b4b6a;
+    transform: translateX(10px);
+    box-shadow: 0px 4px 15px rgba(106, 13, 173, 0.4);
+}
+
+.sidebar .user {
+    margin-top: auto;
+    padding-bottom: 30px;
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar .user span {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sidebar .logout-btn {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar .logout-btn:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
